@@ -1,0 +1,11 @@
+#texto {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.destaque {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+

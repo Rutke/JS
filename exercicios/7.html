@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img" src="https://lh3.googleusercontent.com/chat_attachment/AP1Ws4vFUwSTVXHuTSyiuIWOcfPyBUc_m9etVUa0tVBT2jWZHQ99TvFKROupnXddg_BewjKAFCfkuXUZV6ANZP2mxqY-vclqwjL54vuk4azmSM-f_YenjhK8rYa8x7drfAjtYYi9IWY9MbFFcosuZ0rAKfYpKltcz9APkJa3Is2rMt6O-mxii3VFVkN4m8aSGb98PMgj8PBbdpJkHA2cFncPqVQAJUId9A1qRhvfNME3bNRjy2EZwEwlod7Yz11T6JKV3hGKYhna71Khu5LVTMfMEFWWskWo2YCLbv3TFtrqR8dsIgamRqzFv-Jj11XGJ8CbBUs=w1920-h945" width="200">
+    <br><br>
+    <button onclick="aumentar()">Aumentar Foto</button>
+    <button onclick="diminuir()">Diminuir Foto</button>
+
+    <script>
+        function aumentar() {
+            let img = document.getElementById("img");
+            img.width += 20;
+        }
+
+        function diminuir() {
+            let img = document.getElementById("img");
+            if (img.width > 50) {
+                img.width -= 20;
+            }
+        }
+    </script>
+</body>
+</html>

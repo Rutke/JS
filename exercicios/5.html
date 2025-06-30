@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-UoITV_RmE_CjZdVFZ0-u7H82c9B9evmlg&s" alt="Imagem" width="300" height="200" />
+  <button onclick="proximaImagem()">Próxima Imagem</button>
+
+  <script>
+    const imagens = [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/250px-Gremio_logo.svg.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3qi7aJw0fYPkkHIT6JTpJrSCUr1k5lt1qRoSiGgHeRDrw7gf1-BnJj-itHEb07zIhiA&usqp=CAU",
+    ];
+
+    let indiceAtual = 0;
+
+    function proximaImagem() {
+      indiceAtual = (indiceAtual + 1) % imagens.length;
+      document.getElementById("imagem").src = imagens[indiceAtual];
+    }
+  </script>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputTexto" placeholder="Digite algo aqui..." />
+    <p id="exibicao"></p>
+  
+    <script>
+      const input = document.getElementById("inputTexto");
+      const exibicao = document.getElementById("exibicao");
+  
+      input.addEventListener("input", function() {
+        exibicao.textContent = input.value;
+      });
+    </script>
+</body>
+</html>

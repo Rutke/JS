@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="contador">0</h1>
+    <button onclick="incrementar()">Incrementar</button>
+
+    <script>
+        function incrementar() {
+            const contador = document.getElementById("contador");
+            let valorAtual = parseInt(contador.textContent);
+            valorAtual++;
+            contador.textContent = valorAtual;
+        }
+    </script>
+</body>
+</html>

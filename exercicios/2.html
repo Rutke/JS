@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+  <div id="quadrado" style="width:150px; height:150px; background-color: red;"></div>
+  <button onclick="mudarCor()">Mudar Cor</button>
+
+  <script>
+    function mudarCor() {
+      const quadrado = document.getElementById("quadrado");
+      const corAtual = quadrado.style.backgroundColor;
+
+      if (corAtual === "red") {
+        quadrado.style.backgroundColor = "green";
+      } else if (corAtual === "green") {
+        quadrado.style.backgroundColor = "blue";
+      } else {
+        quadrado.style.backgroundColor = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
